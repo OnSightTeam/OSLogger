@@ -98,7 +98,7 @@ private extension LoggerTool {
 	
 	private func publishLog(log: Log) {
 		
-		if self.configuration.allowLocalLogger {
+		if self.configuration.allowLoggerStorage {
 			LoggerStorage.shared.addLog(detail: log)
 		} else {
 			print(log.message)

@@ -32,7 +32,8 @@ public struct LoggerToolConfiguration {
     
     /// The attbibute enable local logger.
     /// Framework logs to the device console and logger storage: inMemory or onDisk
-    let allowLocalLogger: Bool
+	/// Collected data may be used in logs view
+    let allowLoggerStorage: Bool
     
     /// Attribute used for registering shake gesture notification.
     /// Shake gesture presents display collected logs list components
@@ -43,18 +44,12 @@ public extension LoggerToolConfiguration {
     
     /// Predefined configuration used by default in init method of ``LoggerTool``
     /// Configuration enabled remote logging only.
-    static let `default` = LoggerToolConfiguration(allowLocalLogger: false,
+    static let `default` = LoggerToolConfiguration(allowLoggerStorage: false,
                                                    displayCollectedLogs: false)
     
     /// Configuration activates all main features in ``OSLogger`` framework
     /// Configuration can be used by developer team.
     /// Configuration will be disabled in release version.
-    static let debugConfig = LoggerToolConfiguration(allowLocalLogger: true,
+    static let debugConfig = LoggerToolConfiguration(allowLoggerStorage: true,
                                                      displayCollectedLogs: true)
-    
-    /// Configuration activates local logging only.
-    /// Logs stored to the device console and local storage.
-	/// Display view with logs information by shake gesture disabled.
-    static let localConfig = LoggerToolConfiguration(allowLocalLogger: true,
-                                                     displayCollectedLogs: false)
 }
