@@ -1,6 +1,6 @@
 //
-//  OSLogger.swift
-//  OSLogger
+//  OSTLogger.swift
+//  OSTLogger
 //
 
 import Foundation
@@ -18,7 +18,7 @@ import Foundation
 /// ```swift
 /// logger.error(message: "Error message", category: "http-requests")
 /// ```
-public protocol OSLogger {
+public protocol OSTLogger {
     
     /// Default log message with `info` type and with empty category value.
     ///

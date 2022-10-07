@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5901111F28EC61D6005D7F20 /* OSLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5901111428EC61D6005D7F20 /* OSLogger.framework */; };
+		5901111F28EC61D6005D7F20 /* OSTLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5901111428EC61D6005D7F20 /* OSTLogger.framework */; };
 		5901112428EC61D6005D7F20 /* OSLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901112328EC61D6005D7F20 /* OSLoggerTests.swift */; };
-		5965633928EF51F000D5B0EE /* OSLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5901111428EC61D6005D7F20 /* OSLogger.framework */; };
-		5965633A28EF51F000D5B0EE /* OSLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5901111428EC61D6005D7F20 /* OSLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5965633928EF51F000D5B0EE /* OSTLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5901111428EC61D6005D7F20 /* OSTLogger.framework */; };
+		5965633A28EF51F000D5B0EE /* OSTLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5901111428EC61D6005D7F20 /* OSTLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		59A036DE28EDCCF600357A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A036DD28EDCCF600357A78 /* AppDelegate.swift */; };
 		59A036E028EDCCF600357A78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A036DF28EDCCF600357A78 /* SceneDelegate.swift */; };
 		59A036E528EDCCF600357A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A036E328EDCCF600357A78 /* Main.storyboard */; };
@@ -30,7 +30,7 @@
 		59C46B8928EC67350042E152 /* LogViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C46B7428EC67340042E152 /* LogViewer.swift */; };
 		59C46B8A28EC67350042E152 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C46B7628EC67340042E152 /* Storage.swift */; };
 		59C46B8B28EC67350042E152 /* LoggerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C46B7728EC67340042E152 /* LoggerStorage.swift */; };
-		59C46B8C28EC67350042E152 /* OSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 59C46B7828EC67340042E152 /* OSLogger.h */; };
+		59C46B8C28EC67350042E152 /* OSTLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 59C46B7828EC67340042E152 /* OSTLogger.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5965633A28EF51F000D5B0EE /* OSLogger.framework in Embed Frameworks */,
+				5965633A28EF51F000D5B0EE /* OSTLogger.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,10 +65,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5901111428EC61D6005D7F20 /* OSLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5901111E28EC61D6005D7F20 /* OSLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5901111428EC61D6005D7F20 /* OSTLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSTLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5901111E28EC61D6005D7F20 /* OSTLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSTLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5901112328EC61D6005D7F20 /* OSLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLoggerTests.swift; sourceTree = "<group>"; };
-		59A036DB28EDCCF600357A78 /* OSLogger Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSLogger Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59A036DB28EDCCF600357A78 /* OSTLogger Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSTLogger Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A036DD28EDCCF600357A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59A036DF28EDCCF600357A78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		59A036E428EDCCF600357A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		59C46B7428EC67340042E152 /* LogViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewer.swift; sourceTree = "<group>"; };
 		59C46B7628EC67340042E152 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		59C46B7728EC67340042E152 /* LoggerStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerStorage.swift; sourceTree = "<group>"; };
-		59C46B7828EC67340042E152 /* OSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSLogger.h; sourceTree = "<group>"; };
+		59C46B7828EC67340042E152 /* OSTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSTLogger.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5901111F28EC61D6005D7F20 /* OSLogger.framework in Frameworks */,
+				5901111F28EC61D6005D7F20 /* OSTLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5965633928EF51F000D5B0EE /* OSLogger.framework in Frameworks */,
+				5965633928EF51F000D5B0EE /* OSTLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,9 +134,9 @@
 		5901111528EC61D6005D7F20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5901111428EC61D6005D7F20 /* OSLogger.framework */,
-				5901111E28EC61D6005D7F20 /* OSLoggerTests.xctest */,
-				59A036DB28EDCCF600357A78 /* OSLogger Demo.app */,
+				5901111428EC61D6005D7F20 /* OSTLogger.framework */,
+				5901111E28EC61D6005D7F20 /* OSTLoggerTests.xctest */,
+				59A036DB28EDCCF600357A78 /* OSTLogger Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				59C46B5928EC67340042E152 /* OSLogger.swift */,
-				59C46B7828EC67340042E152 /* OSLogger.h */,
+				59C46B7828EC67340042E152 /* OSTLogger.h */,
 				59C46B7028EC67340042E152 /* LoggerTool */,
 				59C46B7528EC67340042E152 /* Store */,
 				59C46B5D28EC67340042E152 /* Models */,
@@ -277,16 +277,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59C46B8C28EC67350042E152 /* OSLogger.h in Headers */,
+				59C46B8C28EC67350042E152 /* OSTLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5901111328EC61D6005D7F20 /* OSLogger */ = {
+		5901111328EC61D6005D7F20 /* OSTLogger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5901112828EC61D6005D7F20 /* Build configuration list for PBXNativeTarget "OSLogger" */;
+			buildConfigurationList = 5901112828EC61D6005D7F20 /* Build configuration list for PBXNativeTarget "OSTLogger" */;
 			buildPhases = (
 				5901110F28EC61D6005D7F20 /* Headers */,
 				5901111028EC61D6005D7F20 /* Sources */,
@@ -297,14 +297,14 @@
 			);
 			dependencies = (
 			);
-			name = OSLogger;
+			name = OSTLogger;
 			productName = OSLogger;
-			productReference = 5901111428EC61D6005D7F20 /* OSLogger.framework */;
+			productReference = 5901111428EC61D6005D7F20 /* OSTLogger.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5901111D28EC61D6005D7F20 /* OSLoggerTests */ = {
+		5901111D28EC61D6005D7F20 /* OSTLoggerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5901112B28EC61D6005D7F20 /* Build configuration list for PBXNativeTarget "OSLoggerTests" */;
+			buildConfigurationList = 5901112B28EC61D6005D7F20 /* Build configuration list for PBXNativeTarget "OSTLoggerTests" */;
 			buildPhases = (
 				5901111A28EC61D6005D7F20 /* Sources */,
 				5901111B28EC61D6005D7F20 /* Frameworks */,
@@ -315,14 +315,14 @@
 			dependencies = (
 				5901112128EC61D6005D7F20 /* PBXTargetDependency */,
 			);
-			name = OSLoggerTests;
+			name = OSTLoggerTests;
 			productName = OSLoggerTests;
-			productReference = 5901111E28EC61D6005D7F20 /* OSLoggerTests.xctest */;
+			productReference = 5901111E28EC61D6005D7F20 /* OSTLoggerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		59A036DA28EDCCF600357A78 /* OSLogger Demo */ = {
+		59A036DA28EDCCF600357A78 /* OSTLogger Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59A036EE28EDCCF800357A78 /* Build configuration list for PBXNativeTarget "OSLogger Demo" */;
+			buildConfigurationList = 59A036EE28EDCCF800357A78 /* Build configuration list for PBXNativeTarget "OSTLogger Demo" */;
 			buildPhases = (
 				59A036D728EDCCF600357A78 /* Sources */,
 				59A036D828EDCCF600357A78 /* Frameworks */,
@@ -334,9 +334,9 @@
 			dependencies = (
 				5965633C28EF51F000D5B0EE /* PBXTargetDependency */,
 			);
-			name = "OSLogger Demo";
+			name = "OSTLogger Demo";
 			productName = "OSLogger Demo";
-			productReference = 59A036DB28EDCCF600357A78 /* OSLogger Demo.app */;
+			productReference = 59A036DB28EDCCF600357A78 /* OSTLogger Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -361,7 +361,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5901110E28EC61D6005D7F20 /* Build configuration list for PBXProject "OSLogger" */;
+			buildConfigurationList = 5901110E28EC61D6005D7F20 /* Build configuration list for PBXProject "OSTLogger" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -374,9 +374,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5901111328EC61D6005D7F20 /* OSLogger */,
-				5901111D28EC61D6005D7F20 /* OSLoggerTests */,
-				59A036DA28EDCCF600357A78 /* OSLogger Demo */,
+				5901111328EC61D6005D7F20 /* OSTLogger */,
+				5901111D28EC61D6005D7F20 /* OSTLoggerTests */,
+				59A036DA28EDCCF600357A78 /* OSTLogger Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -452,12 +452,12 @@
 /* Begin PBXTargetDependency section */
 		5901112128EC61D6005D7F20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5901111328EC61D6005D7F20 /* OSLogger */;
+			target = 5901111328EC61D6005D7F20 /* OSTLogger */;
 			targetProxy = 5901112028EC61D6005D7F20 /* PBXContainerItemProxy */;
 		};
 		5965633C28EF51F000D5B0EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5901111328EC61D6005D7F20 /* OSLogger */;
+			target = 5901111328EC61D6005D7F20 /* OSTLogger */;
 			targetProxy = 5965633B28EF51F000D5B0EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -754,7 +754,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5901110E28EC61D6005D7F20 /* Build configuration list for PBXProject "OSLogger" */ = {
+		5901110E28EC61D6005D7F20 /* Build configuration list for PBXProject "OSTLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5901112628EC61D6005D7F20 /* Debug */,
@@ -763,7 +763,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5901112828EC61D6005D7F20 /* Build configuration list for PBXNativeTarget "OSLogger" */ = {
+		5901112828EC61D6005D7F20 /* Build configuration list for PBXNativeTarget "OSTLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5901112928EC61D6005D7F20 /* Debug */,
@@ -772,7 +772,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5901112B28EC61D6005D7F20 /* Build configuration list for PBXNativeTarget "OSLoggerTests" */ = {
+		5901112B28EC61D6005D7F20 /* Build configuration list for PBXNativeTarget "OSTLoggerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5901112C28EC61D6005D7F20 /* Debug */,
@@ -781,7 +781,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59A036EE28EDCCF800357A78 /* Build configuration list for PBXNativeTarget "OSLogger Demo" */ = {
+		59A036EE28EDCCF800357A78 /* Build configuration list for PBXNativeTarget "OSTLogger Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59A036EC28EDCCF800357A78 /* Debug */,
