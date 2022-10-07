@@ -1,6 +1,6 @@
 //
 //  LogViewer.swift
-//  OSLogger
+//  OSTLogger
 //
 
 import SwiftUI

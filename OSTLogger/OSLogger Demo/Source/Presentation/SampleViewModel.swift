@@ -5,7 +5,7 @@
 
 import Foundation
 import UIKit
-import OSLogger
+import OSTLogger
 
 class SampleViewModel: NSObject {
     

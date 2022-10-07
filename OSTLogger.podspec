@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.name         = 'OSLogger'
+  spec.name         = 'OSTLogger'
   spec.version      = '0.1'
   spec.summary      = 'Logger tool combind os.log and OSLog SDK frameworks. Depends on the deployment target it used one of library.'
 
@@ -46,6 +46,6 @@ Pod::Spec.new do |spec|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source_files = 'OSLogger/Source/**/*.swift'
+  spec.source_files = 'OSTLogger/Source/**/*.swift'
 
 end

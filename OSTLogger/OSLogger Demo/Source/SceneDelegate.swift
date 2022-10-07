@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  OSLogger Demo
+//  OSTLogger Demo
 //
 //  Created by Nikolay Chaban on 05.10.2022.
 //

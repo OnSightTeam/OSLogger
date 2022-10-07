@@ -1,6 +1,6 @@
 //
 //  LoggerTool.swift
-//  OSLogger
+//  OSTLogger
 //
 //  Created by OnSightTeam on 04.10.2022.
 //
@@ -11,7 +11,7 @@ import UIKit
 
 /// The logger tool main class.
 ///
-/// The class conforms OSLogger protocol.
+/// The class conforms OSTLogger protocol.
 /// Class instance used for the posting logs
 /// Class instance initiates with two parameters: session and configuration ``LoggerToolConfiguration``.
 ///
@@ -28,7 +28,7 @@ import UIKit
 /// By default logger tool initialised with `default` configuration.
 /// This configuration supports remote logging only.
 ///
-public final class LoggerTool: OSLogger {
+public final class LoggerTool: OSTLogger {
     
     // MARK: - Private properties -
     private var configuration: LoggerToolConfiguration

@@ -1,6 +1,6 @@
 //
 //  LoggerToolConfiguration.swift
-//  OSLogger
+//  OSTLogger
 //
 
 import Foundation
@@ -8,7 +8,7 @@ import Foundation
 
 /// The logger tool configuration
 ///
-/// The configuration used for enable and disable main features in ``OSLogger`` framework.
+/// The configuration used for enable and disable main features in ``OSTLogger`` framework.
 /// Configuration is necessary parameter of initialisation of ``LoggerTool``
 /// Init method parameter used ``default`` config.
 ///
@@ -47,7 +47,7 @@ public extension LoggerToolConfiguration {
     static let `default` = LoggerToolConfiguration(allowLoggerStorage: false,
                                                    displayCollectedLogs: false)
     
-    /// Configuration activates all main features in ``OSLogger`` framework
+    /// Configuration activates all main features in ``OSTLogger`` framework
     /// Configuration can be used by developer team.
     /// Configuration will be disabled in release version.
     static let debugConfig = LoggerToolConfiguration(allowLoggerStorage: true,

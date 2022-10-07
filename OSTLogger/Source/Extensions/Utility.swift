@@ -1,6 +1,6 @@
 //
 //  Utility.swift
-//  OSLogger
+//  OSTLogger
 //
 //  Created by OnSightTeam on 04.10.2022.
 //
