@@ -104,16 +104,19 @@ extension Storage where T: Codable {
             }
         )
     }
-    
-    private static func storageURL(filename: String) -> URL {
-        return FileManager.cacheDirectoryURL.appendingPathComponent(filename)
-    }
-    
-    private static func ensureDirectoryExists(storageURL: URL) throws {
-        let dir = storageURL.deletingLastPathComponent()
-        
-        if !FileManager.default.fileExists(atPath: dir.path) {
-            try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true, attributes: nil)
-        }
-    }
+}
+
+private extension Storage {
+	
+	private static func storageURL(filename: String) -> URL {
+		return FileManager.cacheDirectoryURL.appendingPathComponent(filename)
+	}
+	
+	private static func ensureDirectoryExists(storageURL: URL) throws {
+		let dir = storageURL.deletingLastPathComponent()
+		
+		if !FileManager.default.fileExists(atPath: dir.path) {
+			try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true, attributes: nil)
+		}
+	}
 }
