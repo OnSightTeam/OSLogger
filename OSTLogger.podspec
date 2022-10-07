@@ -46,6 +46,6 @@ Pod::Spec.new do |spec|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source_files = 'OSTLogger/Source/**/*.swift'
+  spec.source_files = '*/Source/**/*.swift'
 
 end
