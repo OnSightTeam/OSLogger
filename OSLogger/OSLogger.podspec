@@ -41,11 +41,11 @@ Pod::Spec.new do |spec|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source       = { :git => 'https://github.com/OnSightTeam/OSLogger.git', :branch => 'main' }
+  spec.source       = { :git => 'https://github.com/OnSightTeam/OSLogger.git', :tag => spec.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source_files = 'Source/**/*.swift'
+  spec.source_files = '*/Source/**/*.swift'
 
 end
