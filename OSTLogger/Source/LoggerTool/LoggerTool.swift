@@ -44,7 +44,7 @@ public final class LoggerTool: OSTLogger {
     public init(configuration: LoggerToolConfiguration = .default) {
         self.configuration = configuration
         
-		if #available(iOS 13.0, *), configuration.displayCollectedLogs {
+		if configuration.displayCollectedLogs {
            self.registerShakeHandler()
         }
     }
@@ -112,6 +112,7 @@ private extension LoggerTool {
 	/// > Important: If used iOS version lower than 15 displayed logs loaded only from current app session,
 	/// if 15+ then all collected logs from current and previous app sessions.
 	///
+	@available(iOS 13.0, *)
 	private func registerShakeHandler() {
 		NotificationCenter.default.addObserver(self,
 											   selector: #selector(presentLogsView),
