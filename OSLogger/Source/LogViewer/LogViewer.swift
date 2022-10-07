@@ -5,6 +5,10 @@
 
 import SwiftUI
 
+/// Log viewer view model.
+///
+/// Minimal deployment target of usage is iOS 13.
+///
 @available(iOS 13.0, *)
 final class LogViewModel: ObservableObject {
     
@@ -15,6 +19,10 @@ final class LogViewModel: ObservableObject {
     }
 }
 
+/// Logs viewer
+///
+/// c
+///
 @available(iOS 13.0, *)
 struct LogViewer: View {
     
@@ -39,6 +47,10 @@ struct LogViewer: View {
     }
 }
 
+/// Log entry cell view
+///
+/// Minimal deployment target of usage is iOS 13.
+///
 @available(iOS 13.0, *)
 struct LogEntryRow: View {
     let entry: LogEntry
@@ -66,6 +78,10 @@ struct LogEntryRow: View {
     }
 }
 
+/// Logs viewer controller.
+///
+/// Minimal deployment target of usage is iOS 13.
+///
 @available(iOS 13.0, *)
 class LogViewerController: UIHostingController<LogViewer> {
     init() {
