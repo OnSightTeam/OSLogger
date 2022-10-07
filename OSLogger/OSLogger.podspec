@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source       = { :git => 'https://github.com/OnSightTeam/OSLogger.git', :tag => '#{spec.version}' }
+  spec.source       = { :git => 'https://github.com/OnSightTeam/OSLogger.git', :tag => spec.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
