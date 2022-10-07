@@ -2,9 +2,9 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.name         = "OSLogger"
-  spec.version      = "0.1"
-  spec.summary      = "Logger tool combind os.log and OSLog SDK frameworks. Depends on the deployment target it used one of library."
+  spec.name         = 'OSLogger'
+  spec.version      = '0.1'
+  spec.summary      = 'Logger tool combind os.log and OSLog SDK frameworks. Depends on the deployment target it used one of library.'
 
   spec.description  = <<-DESC
   Logger tool combind os.log and OSLog SDK frameworks. Depends on the deployment target it used one of library.
@@ -16,13 +16,13 @@ Pod::Spec.new do |spec|
   On the version 0.1 default memory is default storage.
                    DESC
 
-  spec.homepage     = "http://onsightteam.com/"
+  spec.homepage     = 'http://onsightteam.com/'
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :text => <<-LICENSE
+  spec.license      = 'MIT (example)'
+  spec.license      = { :type => 'MIT', :text => <<-LICENSE
                         Copyright © 2022 OnSightTeam. All rights reserved.
                         LICENSE
                       }
@@ -30,28 +30,22 @@ Pod::Spec.new do |spec|
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.author             = { "Nikolay Chaban" => "nchaban.kh@gmail.com" }
-  spec.social_media_url   = "https://twitter.com/OxidBurn"
+  spec.author             = { 'Nikolay Chaban' => 'nchaban.kh@gmail.com' }
+  #spec.social_media_url   = 'https://twitter.com/OxidBurn'
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.ios.deployment_target = "13.0"
-  spec.swift_version         = "5.5"
+  spec.ios.deployment_target = '13.0'
+  spec.swift_version         = '5.5'
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source       = { :git => "https://github.com/OnSightTeam/OSLogger.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => 'https://github.com/OnSightTeam/OSLogger.git', :tag => '#{spec.version}' }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source_files = "Sources/**/*.{h,swift}" #, 'fixup_project_structure'
-
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
-  # spec.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.source_files = 'Source/*.swift'
 
 end
