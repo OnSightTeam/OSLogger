@@ -46,8 +46,6 @@ class SampleViewModel: NSObject {
     }
     
     
-	/// @author Nikolay Chaban
-	///
 	/// The method reset logger tool instance and creates new one.
 	///
     /// > Important: If test device system lower than iOS 15 logs may lost

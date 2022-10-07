@@ -11,14 +11,10 @@ import os.log
 import OSLog
 import UIKit
 
-/// @author Nikolay Chaban
-///
 /// Constant of the logs subsystem in the device console.
 ///
 let subsystem = "com.onsightteam.logger"
 
-/// @author Nikolay Chaban
-///
 /// Log entry colors extension
 ///
 /// `.color` property defines color of the view based on the log type.
@@ -39,8 +35,7 @@ private extension OSLogEntryLog {
     }
 }
 
-/// @author Nikolay Chaban
-///
+
 /// Logger storage class.
 /// Depends on the used iOS system on device logger posted data into `os.log` framework or to the `OSLog`
 ///
@@ -54,11 +49,10 @@ private extension OSLogEntryLog {
 /// storage.addLog(detail: Log(message: message, type: type, category: category ?? "debugging"))
 /// ```
 ///
-class LoggerStorage {
+public final class LoggerStorage {
     
     // MARK: - Public attributes -
-	/// @author Nikolay Chaban
-	///
+	
 	/// Shared class instance with in memory storage type
 	///
     static let shared = LoggerStorage(storage: .inMemory)
@@ -70,8 +64,6 @@ class LoggerStorage {
     
     // MARK: - Init methods -
 	
-	/// @author Nikolay Chaban
-	///
 	/// Init method accepts of the storage with specific type ``Storage``
 	///
 	/// - Parameter storage: logs storage
@@ -83,8 +75,6 @@ class LoggerStorage {
     
     // MARK: - Public methods -
 	
-	/// @author Nikolay Chaban
-	///
 	/// Method posted log details to the Logger or os.log tool.
 	/// Used framework based on the system version.
 	///
@@ -100,8 +90,6 @@ class LoggerStorage {
         }
     }
 	
-	/// @author Nikolay Chaban
-	///
 	/// Method returns collected logs from the storage or device console.
 	/// Logs storage depends on the used version.
 	/// iOS 15+, all logs loads from the device console.
@@ -118,8 +106,6 @@ class LoggerStorage {
         }
     }
 	
-	/// @author Nikolay Chaban
-	///
 	/// Method deletes all collected logs.
 	///
     func removeAllLogs() {

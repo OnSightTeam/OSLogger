@@ -28,7 +28,7 @@ import UIKit
 /// By default logger tool initialised with `default` configuration.
 /// This configuration supports remote logging only.
 ///
-public class LoggerTool: OSLogger {
+public final class LoggerTool: OSLogger {
     
     // MARK: - Private properties -
     private var configuration: LoggerToolConfiguration
@@ -106,8 +106,6 @@ private extension LoggerTool {
 	}
 	
 	
-	/// @author Nikolay Chaban
-	///
 	/// Subscription on the "Shake" gesture to trigger display collected logs view.
 	/// Logs view works only on iOS 13+.
 	///
