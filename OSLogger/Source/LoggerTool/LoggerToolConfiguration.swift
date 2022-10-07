@@ -15,7 +15,7 @@ import Foundation
 /// > Important: Configuration used as on-demand dependencies and can't be changed after framework instance initialised.
 ///
 /// Developer may use one of predefined configuration.
-/// There is three option: ``default``, ``debugConfig`` and ``localConfig``
+/// There is three option: ``default``, ``debugConfig``
 ///
 /// Configuration | Description
 /// --- | ---

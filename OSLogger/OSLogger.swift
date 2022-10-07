@@ -9,9 +9,14 @@ import Foundation
 ///
 /// Protocol declares public logger framework methods
 ///
+/// Simple log message:
 /// ```swift
 /// logger.info(message: "Log message")
-/// logger.error(message: "Error message", category: "initial-screen")
+/// ```
+///
+/// Message in specific log category
+/// ```swift
+/// logger.error(message: "Error message", category: "http-requests")
 /// ```
 public protocol OSLogger {
     

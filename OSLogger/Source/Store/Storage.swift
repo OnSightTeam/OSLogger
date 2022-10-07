@@ -5,33 +5,25 @@
 
 import Foundation
 
-/// @author Nikolay Chaban
-///
 /// Logs storage with generic type
 /// Implemented as struct for convenient initialization and use variables instead of methods.
 ///
-/// <T> - generic type of the log entry struct.
+/// Storage used generic type for storing. In the logger used for ``Log`` struct object.
 /// Struct contains all required information of the log information.
 ///
-struct Storage<T> {
+public struct Storage<T> {
 	
-	/// @author Nikolay Chaban
-	///
 	/// Property returns all stored logs.
 	/// Property type: Array<T>
 	///
     var load: () throws -> [T]?
 	
-	/// @author Nikolay Chaban
-	///
 	/// Property stored log object to the defined storage
 	/// Process throws FileManager errors.
 	///
     var save: (_ object: T) throws -> Void
 	
 	
-	/// @author Nikolay Chaban
-	///
 	/// Property removed all stored logs
 	/// Process throws FileManager errors.
 	///
@@ -40,8 +32,6 @@ struct Storage<T> {
 
 extension Storage {
 	
-	/// @author Nikolay Chaban
-	///
 	/// In memory log storage.
 	///
 	/// ```swift
@@ -64,8 +54,6 @@ extension Storage {
 
 extension Storage where T: Codable {
 	
-	/// @author Nikolay Chaban
-	///
 	/// Method initialized file storage.
 	/// Required parameter is file name where all logs recorded.
 	///
@@ -104,16 +92,19 @@ extension Storage where T: Codable {
             }
         )
     }
-    
-    private static func storageURL(filename: String) -> URL {
-        return FileManager.cacheDirectoryURL.appendingPathComponent(filename)
-    }
-    
-    private static func ensureDirectoryExists(storageURL: URL) throws {
-        let dir = storageURL.deletingLastPathComponent()
-        
-        if !FileManager.default.fileExists(atPath: dir.path) {
-            try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true, attributes: nil)
-        }
-    }
+}
+
+private extension Storage {
+	
+	private static func storageURL(filename: String) -> URL {
+		return FileManager.cacheDirectoryURL.appendingPathComponent(filename)
+	}
+	
+	private static func ensureDirectoryExists(storageURL: URL) throws {
+		let dir = storageURL.deletingLastPathComponent()
+		
+		if !FileManager.default.fileExists(atPath: dir.path) {
+			try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true, attributes: nil)
+		}
+	}
 }

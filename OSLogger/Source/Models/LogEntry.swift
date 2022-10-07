@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+/// Custom log color struct
+///
 struct LogColor: Codable {
     var red: CGFloat = 0.0, green: CGFloat = 0.0, blue: CGFloat = 0.0, alpha: CGFloat = 0.0
     
@@ -20,11 +22,29 @@ struct LogColor: Codable {
     }
 }
 
+/// Stored log entry information is presented in Log entry objects.
+///
 struct LogEntry: Identifiable {
+	
+	/// unique log id
+	///
     var id = UUID()
+	
+	/// posted log date
+	///
     let date: String
+	
+	/// Posted log specific category
+	///
     let category: String
+	
+	/// Posted log message.
+	///
     let message: String
+	
+	/// Posted log color.
+	/// It's optional value and maybe defined based on the log type
+	/// 
     let color: UIColor
 }
 

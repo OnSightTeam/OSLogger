@@ -11,9 +11,15 @@ import os.log
 import OSLog
 import UIKit
 
+/// Constant of the logs subsystem in the device console.
+///
 let subsystem = "com.onsightteam.logger"
 
-
+/// Log entry colors extension
+///
+/// `.color` property defines color of the view based on the log type.
+/// Property used in display logs view or similar solutions.
+///
 @available(iOS 15.0, *)
 private extension OSLogEntryLog {
     
@@ -29,8 +35,7 @@ private extension OSLogEntryLog {
     }
 }
 
-/// @author Nikolay Chaban
-///
+
 /// Logger storage class.
 /// Depends on the used iOS system on device logger posted data into `os.log` framework or to the `OSLog`
 ///
@@ -39,11 +44,17 @@ private extension OSLogEntryLog {
 /// Init method has required parameter of the ``Storage`` object.
 ///
 /// ```swift
-/// let storage = LoggerStorage(storage: Storage.filename(""
+/// let storage = LoggerStorage(storage: Storage.filename("storage.plist")
 ///
-class LoggerStorage {
+/// storage.addLog(detail: Log(message: message, type: type, category: category ?? "debugging"))
+/// ```
+///
+public final class LoggerStorage {
     
     // MARK: - Public attributes -
+	
+	/// Shared class instance with in memory storage type
+	///
     static let shared = LoggerStorage(storage: .inMemory)
     
     
@@ -52,14 +63,25 @@ class LoggerStorage {
     
     
     // MARK: - Init methods -
-    
+	
+	/// Init method accepts of the storage with specific type ``Storage``
+	///
+	/// - Parameter storage: logs storage
+	///
     init(storage: Storage<LogEntry>) {
         self.storage = storage
     }
     
     
     // MARK: - Public methods -
-
+	
+	/// Method posted log details to the Logger or os.log tool.
+	/// Used framework based on the system version.
+	///
+	/// Accepted parameter is ``Log`` object.
+	///
+	/// - Parameter detail: log detail
+	///
     func addLog(detail: Log) {
         if #available(iOS 15.0, *) {
             postToLogger(detail: detail)
@@ -67,7 +89,14 @@ class LoggerStorage {
             postToOSLog(detail: detail)
         }
     }
-    
+	
+	/// Method returns collected logs from the storage or device console.
+	/// Logs storage depends on the used version.
+	/// iOS 15+, all logs loads from the device console.
+	/// iOS lower than 15 loads from storage `.inMemory` or `.fileStorage`
+	///
+	/// - Returns: array of the ``LogEntry`` objects.
+	///
     func obtainLogs() -> [LogEntry] {
         
         if #available(iOS 15.0, *) {
@@ -76,12 +105,14 @@ class LoggerStorage {
             return obtainLogsFromStorage()
         }
     }
-    
+	
+	/// Method deletes all collected logs.
+	///
     func removeAllLogs() {
         do {
             try storage.removeAllData()
         } catch let err {
-            print("Occurs error on removing log data operation: \(err)")
+            print("#---- Occurs error on removing log data operation: \(err) ----#")
         }
     }
 }
@@ -130,7 +161,7 @@ private extension LoggerStorage {
         do {
             try storage.save(logEntry)
         } catch let err {
-            print("Store log entry data error: \(err)")
+            print("#---- Store log entry data error: \(err) ----#")
         }
     }
 }
@@ -155,7 +186,7 @@ private extension LoggerStorage {
             
             return entries
         } catch {
-            print("Error with initializing log store object")
+            print("#---- Error with initializing log store object ----#")
         }
         
         return []
@@ -167,7 +198,7 @@ private extension LoggerStorage {
             
             return entries
         } catch let err {
-            print("Load logs data error: \(err)")
+            print("#---- Load logs data error: \(err) ----#")
         }
         
         return []
