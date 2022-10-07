@@ -21,7 +21,7 @@ final class LogViewModel: ObservableObject {
 
 /// Logs viewer
 ///
-/// c
+/// Minimal deployment target of usage is iOS 13.
 ///
 @available(iOS 13.0, *)
 struct LogViewer: View {
