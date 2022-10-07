@@ -46,7 +46,7 @@ Pod::Spec.new do |spec|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source_files  = "Source/**/*.{h,m,swift}", 'fixup_project_structure'
+  spec.source_files  = "Source/**/*.swift"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
