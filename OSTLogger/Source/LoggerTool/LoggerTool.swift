@@ -44,7 +44,7 @@ public final class LoggerTool: OSTLogger {
     public init(configuration: LoggerToolConfiguration = .default) {
         self.configuration = configuration
         
-		if configuration.displayCollectedLogs {
+		if #available(iOS 13.0, *), configuration.displayCollectedLogs {
            self.registerShakeHandler()
         }
     }
