@@ -122,8 +122,6 @@
 		5901110A28EC61D6005D7F20 = {
 			isa = PBXGroup;
 			children = (
-				59C46B5928EC67340042E152 /* OSLogger.swift */,
-				59C46B7828EC67340042E152 /* OSLogger.h */,
 				59C46B5A28EC67340042E152 /* Source */,
 				59C46B5B28EC67340042E152 /* Documentation */,
 				5901112228EC61D6005D7F20 /* OSLoggerTests */,
@@ -209,6 +207,8 @@
 		59C46B5A28EC67340042E152 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				59C46B5928EC67340042E152 /* OSLogger.swift */,
+				59C46B7828EC67340042E152 /* OSLogger.h */,
 				59C46B7028EC67340042E152 /* LoggerTool */,
 				59C46B7528EC67340042E152 /* Store */,
 				59C46B5D28EC67340042E152 /* Models */,

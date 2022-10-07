@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   On the version 0.1 default memory is default storage.
                    DESC
 
-  spec.homepage     = "http://onsightteam.com/OSLogger"
+  spec.homepage     = "http://onsightteam.com/"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -46,13 +46,8 @@ Pod::Spec.new do |spec|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source_files  = "/**/*.{h,m,swift}", 'fixup_project_structure'
+  spec.source_files  = "Source/**/*.{h,m,swift}", 'fixup_project_structure'
 
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
-  spec.resources     = "/**/*.{png,xib,storyboard,xcassets,lproj,strings}"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
